@@ -5,20 +5,20 @@
 #include <stdio.h>
 
 int main() {
-   int i,s1,s2;
-   float mark,sum=0,avg;
+   int counter=1,total;
+   float avg,mark;
+  
+   while(counter<=2){
    printf("Enter marks of two subjects:");
-   scanf("%f",mark);
-   printf("enter mark of subject 1");
-   scanf("%d",&s1);
-   printf("enter mark of subject 2")
-   scanf("%d",&s2);
-   sum=s1+s2;
-   printf("total mark =\n");
-   scanf("%f",&sum);
-   avg=sum/2.0;
-   printf("average is :");
-   scanf("%f",&avg);
+   scanf("%f",&mark);
+   total=total+mark;
+   
+   counter=counter+1;
+   }
+   
+   avg=(float)total/2.0;
+   printf("average is %.2f\n",avg);
+   
   
   return 0;
 }
